@@ -5,11 +5,11 @@ L293D IC enables us to rotate the motor in clockwise or anticlockwise direction 
 
 HC-SR04 (used instead of HC-SR05, as this was not available on Tinkercad) returns the time taken for the pulse to return to the sensor, which is used to calculate the distance.
 
-Code explanation: 
-sensor is triggered for 10 microseconds and then the pulse transmission-receiver time (using pulseIn fucntion) is taken after which distance is calculated by using the factor of 0.01723 * pulse duration.
-If-Else statements are used for checking the distance and rotating motor accordingly
-	Distance>80cm : motor rotates clockwise
-	Distance<60cm : motor rotates anti-clockwise
+Code explanation: <br/>
+sensor is triggered for 10 microseconds and then the pulse transmission-receiver time (using pulseIn fucntion) is taken after which distance is calculated by using the factor of 0.01723 * pulse duration.<br/>
+If-Else statements are used for checking the distance and rotating motor accordingly<br/>
+	Distance>80cm : motor rotates clockwise<br/>
+	Distance<60cm : motor rotates anti-clockwise<br/>
 	Distance between 60 cm and 80 cm : motor doesn't rotate.
 	
 Link to the tinkercad project: https://www.tinkercad.com/things/13eV6bESvUo
