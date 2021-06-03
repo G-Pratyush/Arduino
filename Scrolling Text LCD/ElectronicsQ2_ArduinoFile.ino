@@ -1,0 +1,25 @@
+#include<LiquidCrystal.h>
+int rs=12,e=11,d4=7,d5=6,d6=5,d7=4;
+LiquidCrystal lcd(rs,e,d4,d5,d6,d7);
+
+char * name="Pratyush Gupta  ";
+int length=strlen(name);
+int i=0,j=0;
+void setup()
+{
+	lcd.begin(16,2);		//initialize interface to LED
+}
+
+void loop()
+{
+  lcd.setCursor(0,0);		
+  for (i=j;i<length;i++)	//Loop to print first part of name
+    lcd.print(name[i]);			
+  for (int k=0;k<j;k++)		//Loop to print second part of name
+    lcd.print(name[k]);			
+  j++;
+  if(j>15)
+    j=0;
+  delay(400);
+    
+}
