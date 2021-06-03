@@ -8,8 +8,8 @@ HC-SR04 (used instead of HC-SR05, as this was not available on Tinkercad) return
 Code explanation: <br/>
 sensor is triggered for 10 microseconds and then the pulse transmission-receiver time (using pulseIn fucntion) is taken after which distance is calculated by using the factor of 0.01723 * pulse duration.<br/>
 If-Else statements are used for checking the distance and rotating motor accordingly<br/>
-	Distance>80cm : motor rotates clockwise<br/>
-	Distance<60cm : motor rotates anti-clockwise<br/>
-	Distance between 60 cm and 80 cm : motor doesn't rotate.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Distance>80cm : motor rotates clockwise<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Distance<60cm : motor rotates anti-clockwise<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Distance between 60 cm and 80 cm : motor doesn't rotate.
 	
 Link to the tinkercad project: https://www.tinkercad.com/things/13eV6bESvUo
